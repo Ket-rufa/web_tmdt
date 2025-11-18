@@ -1,0 +1,149 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#header {
+  height: 60px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#nav {
+  display:inline-block;
+}
+#nav , .subnav {
+  list-style-type: none;
+}
+#nav > li{ 
+  display:inline-block;
+}
+#nav li{
+  position:relative;
+}
+
+#nav > li > a{
+  text-transform: uppercase; /* thuộc tính viết chữ in hoa */
+  color:#000000;
+}
+
+#nav li a{
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display:block;
+}
+#nav li:hover .subnav {
+  display:block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+  color:#ffffff;
+  background-color: #000000;
+}
+
+#nav .subnav {
+  position: absolute;
+  min-width: 160px;
+  display:none;
+  top: 100%;
+  left:0;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+#nav .subnav a{
+  color: #000000;
+  padding: 0 14px;
+  line-height: 38px;
+}
+
+#input1 {
+  padding: 25px 25px 10px 400px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f4;
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+}
+
+form{
+    margin-top: 30px;
+}
+.form-content {
+    text-align: center;
+    font-size: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
+
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.form-link span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  padding:30px;
+}
